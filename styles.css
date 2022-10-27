@@ -227,14 +227,33 @@
   background-color: hsl(232, 16%, 36%);
 }
 @media only screen and (max-width: 800px) {
+  .header {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+  }
+  .dark-mode-section {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+  }
+  .hr {
+    height: 3px;
+    width: 95%;
+    background-color: hsl(228, 12%, 44%);
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
   .total-stats {
     display: flex;
     flex-direction: column;
-    margin-top: -100px;
+    margin-top: -80px;
   }
   .color-container {
     margin-top: 0;
-    padding: 10px 20px;
+    padding: 10px 15px;
   }
   .facebook,
   .twitter,
