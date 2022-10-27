@@ -59,14 +59,7 @@
   top: 10%;
   right: 5%;
 }
-.total-stats {
-  margin-top: -150px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  width: 100%;
-  padding: 0 55px;
-  place-items: center;
-}
+
 .stats {
   background-color: hsl(227, 47%, 96%);
   display: flex;
@@ -130,11 +123,6 @@
   color: hsl(356, 69%, 56%);
   font-weight: 600;
   font-size: 12px;
-}
-.overview {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  place-items: center;
 }
 .overview-container {
   width: 100vw;
@@ -209,7 +197,6 @@
 }
 .dark-bg {
   background-color: hsl(230, 17%, 14%);
-  height: 100%;
 }
 .dark-bg-pattern {
   background-color: hsl(232, 16%, 36%);
@@ -239,8 +226,7 @@
 .each-reviewss:hover {
   background-color: hsl(232, 16%, 36%);
 }
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .total-stats {
     display: flex;
     flex-direction: column;
@@ -254,7 +240,7 @@
   .twitter,
   .instagram,
   .youtube {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
   }
   .overview-container {
     padding: 10px 20px;
@@ -262,6 +248,7 @@
   .overview {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   .each-review {
     margin-bottom: 15px;
@@ -271,5 +258,75 @@
   .each-review:nth-child(7),
   .each-review:nth-child(8) {
     margin-top: 0;
+  }
+  .dark-bg {
+    height: 100%;
+    width: 100%;
+  }
+  body {
+    overflow-x: hidden;
+  }
+}
+@media only screen and (min-width: 800px) and (max-width: 1060px) {
+  .total-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 40px;
+    column-gap: 100px;
+    margin-top: -100px;
+    place-items: center;
+  }
+  .overview {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    row-gap: 30px;
+    max-width: 950px;
+  }
+  .each-review {
+    width: 200px;
+  }
+  .each-review:nth-child(5),
+  .each-review:nth-child(6),
+  .each-review:nth-child(7),
+  .each-review:nth-child(8) {
+    margin-top: 0;
+  }
+  .color-container {
+    margin-top: -10px;
+  }
+  .dark-bg {
+    height: 100%;
+    width: 100%;
+  }
+  body {
+    overflow-x: hidden;
+  }
+}
+@media only screen and (min-width: 1060px) {
+  .total-stats {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    align-items: center;
+    margin-top: -150px;
+  }
+  .stats {
+    max-width: 220px;
+  }
+  .color-container {
+    margin-top: -34px;
+  }
+  .dark-bg {
+    height: 100vh;
+    width: 100%;
+  }
+  .overview {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+  }
+  .each-review {
+    width: 230px;
   }
 }

@@ -18,8 +18,13 @@ darkModeBtn.addEventListener("click", () => {
   mainContainer.classList.toggle("dark-bg");
   stats.forEach(function (e) {
     e.classList.toggle("dark-bg-card");
-    e.classList.remove("statss");
-    e.classList.add("statsss");
+    if (e.classList.contains("dark-bg-card")) {
+      e.classList.remove("statss");
+      e.classList.add("statsss");
+    } else {
+      e.classList.add("statss");
+      e.classList.remove("statsss");
+    }
   });
   eachReview.forEach(function (e) {
     e.classList.toggle("dark-bg-card");
