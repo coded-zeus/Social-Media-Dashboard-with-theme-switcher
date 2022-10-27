@@ -1,0 +1,275 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.main-container {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 14px;
+}
+.color-container {
+  background-color: hsl(225, 100%, 98%);
+  width: 100vw;
+  padding: 20px 55px;
+  height: 200px;
+  margin-top: -30px;
+}
+.total-followers {
+  font-weight: 600;
+  color: hsl(228, 12%, 44%);
+}
+.sub-header {
+  font-weight: 700;
+  color: hsl(230, 17%, 14%);
+}
+.dark-mode {
+  font-weight: 600;
+  color: hsl(228, 12%, 44%);
+}
+.dark-mode-btn {
+  background-color: hsl(228, 12%, 44%);
+  border: none;
+  border-radius: 30px;
+  width: 50px;
+  height: 20px;
+  margin-left: 10px;
+  position: relative;
+}
+.dark-mode-section {
+  display: flex;
+  align-items: center;
+  width: 150px;
+  margin-right: -20px;
+}
+.switch {
+  position: absolute;
+  background-color: white;
+  border-radius: 34px;
+  width: 40%;
+  height: 80%;
+  top: 10%;
+  right: 5%;
+}
+.total-stats {
+  margin-top: -150px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
+  padding: 0 55px;
+  place-items: center;
+}
+.stats {
+  background-color: hsl(227, 47%, 96%);
+  display: flex;
+  align-items: center;
+  padding: 20px 40px;
+  flex-direction: column;
+  border-radius: 5px;
+  width: 250px;
+}
+.acct-name {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.name,
+.followers {
+  color: hsl(228, 12%, 44%);
+}
+.followers {
+  margin-bottom: 15px;
+}
+.increment {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+.logo {
+  margin-right: 8px;
+}
+.instagram {
+  background-image: linear-gradient(
+    to right,
+    hsl(37, 97%, 70%),
+    hsl(329, 70%, 58%)
+  );
+  border-radius: 5px;
+  padding-top: 4px;
+}
+.facebook {
+  background-color: hsl(208, 92%, 53%);
+  border-radius: 5px;
+  padding-top: 4px;
+}
+.twitter {
+  background-color: hsl(203, 89%, 53%);
+  border-radius: 5px;
+  padding-top: 4px;
+}
+.youtube {
+  background-color: hsl(348, 97%, 39%);
+  border-radius: 5px;
+  padding-top: 4px;
+}
+.increment-date:not(.red) {
+  color: hsl(163, 72%, 41%);
+  font-weight: 600;
+  font-size: 12px;
+}
+.red {
+  color: hsl(356, 69%, 56%);
+  font-weight: 600;
+  font-size: 12px;
+}
+.overview {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  place-items: center;
+}
+.overview-container {
+  width: 100vw;
+  padding: 20px 55px;
+}
+
+.each-review {
+  background-color: hsl(227, 47%, 96%);
+  padding: 10px 20px;
+  border-radius: 5px;
+  width: 250px;
+}
+.overview-today {
+  color: hsl(228, 12%, 44%);
+  margin-bottom: 15px;
+}
+.pageviews,
+.numbers {
+  display: flex;
+  justify-content: space-between;
+}
+.increment-number-cont {
+  display: flex;
+  align-items: flex-end;
+}
+.pageviews {
+  margin-bottom: 25px;
+}
+.page-view {
+  font-size: 13px;
+  font-weight: 500;
+}
+.increment-number:not(.red-icon) {
+  font-size: 13px;
+  font-weight: 600;
+  color: hsl(163, 72%, 41%);
+}
+.red-icon {
+  color: hsl(348, 97%, 39%);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.increment-number-sub {
+  display: flex;
+  align-items: center;
+}
+.each-review:nth-child(5),
+.each-review:nth-child(6),
+.each-review:nth-child(7),
+.each-review:nth-child(8) {
+  margin-top: 25px;
+}
+.dark-mode-btn:hover {
+  background-color: hsl(230, 22%, 74%);
+  cursor: pointer;
+}
+.statss:hover {
+  background-color: hsl(230, 22%, 74%);
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+.each-reviews:hover {
+  background-color: hsl(230, 22%, 74%);
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.followers-number,
+.main-number,
+.page-view {
+  color: hsl(230, 17%, 14%);
+}
+.dark-bg {
+  background-color: hsl(230, 17%, 14%);
+  height: 100%;
+}
+.dark-bg-pattern {
+  background-color: hsl(232, 16%, 36%);
+}
+.dark-bg-card {
+  background-color: hsl(228, 28%, 20%);
+}
+.dark-text {
+  color: hsl(228, 34%, 66%);
+}
+.dark-main-text {
+  color: white;
+}
+.dark-bg-toggle {
+  background-image: linear-gradient(
+    to right,
+    hsl(210, 78%, 56%),
+    hsl(146, 68%, 55%)
+  );
+}
+.slide {
+  left: 5%;
+}
+.statsss:hover {
+  background-color: hsl(232, 16%, 36%);
+}
+.each-reviewss:hover {
+  background-color: hsl(232, 16%, 36%);
+}
+
+@media only screen and (max-width: 600px) {
+  .total-stats {
+    display: flex;
+    flex-direction: column;
+    margin-top: -100px;
+  }
+  .color-container {
+    margin-top: 0;
+    padding: 10px 20px;
+  }
+  .facebook,
+  .twitter,
+  .instagram,
+  .youtube {
+    margin-bottom: 20px;
+  }
+  .overview-container {
+    padding: 10px 20px;
+  }
+  .overview {
+    display: flex;
+    flex-direction: column;
+  }
+  .each-review {
+    margin-bottom: 15px;
+  }
+  .each-review:nth-child(5),
+  .each-review:nth-child(6),
+  .each-review:nth-child(7),
+  .each-review:nth-child(8) {
+    margin-top: 0;
+  }
+}
